@@ -50,16 +50,18 @@ body {
     border: none;
     padding: .5rem 1.5rem;
     font-size: 1rem;
-    background-color: black;
-    color: white;
     cursor: pointer;
     border-radius: 2rem;
-    transition: background .3s ease;
+    transition: all .4s ease-in-out;
+    background: linear-gradient(-45deg,#f29f05,#f257a0,#2c79f6,#04bfad);
+    background-size: 600%;
+    animation: anime 8s linear infinite;
+    color: #fff;
 }
 
-.header__submitBtn:hover {
-    background: #872ce3;
-}
+/*.header__submitBtn:hover {*/
+    /*background: #872ce3;*/
+/*}*/
 
 .content__gallery {
     display: grid;
@@ -127,16 +129,31 @@ body {
 .navButton__btn {
     padding: 1rem 3rem;
     background: black;
-    color: white;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 2rem;
-    transition: background .3s ease;
+    transition: all .4s ease-in-out;
+    background: linear-gradient(-45deg,#f29f05,#f257a0,#2c79f6,#04bfad);
+    background-size: 600%;
+    animation: anime 8s linear infinite;
+    color: #fff;
 }
 
-.navButton__btn:hover {
-    background: #872ce3;
+/*.navButton__btn:hover {*/
+    /*background: #872ce3;*/
+/*}*/
+
+@keyframes anime {
+    from {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    to {
+        background-position: 0% 50%
+    }
 }
 
 @media screen and (max-width: 576px) {
